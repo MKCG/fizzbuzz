@@ -6,7 +6,7 @@
 #define STDOUT_FD 1
 
 static int increment_number(char * number, int number_length) {
-    number[number_length - 1] = 0;
+    number[number_length - 1] = '0';
 
     for (int i = number_length - 2; i >= 0; i--) {
         if (number[i] < '9') {
